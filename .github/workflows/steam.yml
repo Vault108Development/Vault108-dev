@@ -30,5 +30,5 @@ jobs:
           plugin_steam_playtime_threshold: 2
           plugin_steam_recent_games_limit: 1
           plugin_steam_sections: player, most-played, recently-played
-          plugin_steam_user: ${{ secrets.steam }}
+          plugin_steam_user: Kleeperson
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
