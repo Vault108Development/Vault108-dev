@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
-name: Metrics
+name: Language
 on:
   # Schedule updates (each hour)
   schedule: [{cron: "0 4 * * sun"}]
@@ -23,6 +23,8 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          filename: images/languages-activity.svg
+
 
           # Options
           user: Vault108
