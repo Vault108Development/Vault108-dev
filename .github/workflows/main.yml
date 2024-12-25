@@ -2,8 +2,7 @@ name: Waka Readme
 
 on:
   schedule:
-    # Runs at 12am IST
-    - cron: '30 18 * * *'
+    - cron: '*/300 * * * *'
   workflow_dispatch:
 jobs:
   update-readme:
@@ -15,7 +14,6 @@ jobs:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SHOW_OS: "True"
-          SHOW_PROJECTS: "True"
           SHOW_PROJECTS:
           SHOW_TIMEZONE:
           SHOW_EDITORS: 
