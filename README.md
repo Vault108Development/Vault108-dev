@@ -11,8 +11,6 @@
 
 > 📦 114.1 kB Used in GitHub's Storage 
  > 
-> 🏆 25 Contributions in the Year 2024
- > 
 > 🚫 Not Opted to Hire
  > 
 > 📜 68 Public Repositories 
@@ -82,5 +80,5 @@ Ruby                     1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/Vault108/Vault108/main/assets/bar_graph.png)
 
 
- Last Updated on 30/12/2024 23:13:16 UTC
+ Last Updated on 31/12/2024 01:01:35 UTC
 <!--END_SECTION:waka-->
