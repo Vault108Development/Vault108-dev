@@ -46,18 +46,16 @@ Sunday                   140 commits         ███░░░░░░░░�
 🕑︎ Time Zone: America/New_York
 
 💬 Programming Languages: 
-Markdown                 1 min               ████████████████░░░░░░░░░   62.67 % 
-Python                   0 secs              ████████░░░░░░░░░░░░░░░░░   32.81 % 
-Text                     0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   04.51 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  2 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-SimpleDiscord            2 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Linux                    2 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in Python** 
@@ -73,7 +71,7 @@ C++                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 11/03/2025 04:04:56 UTC
+ Last Updated on 11/03/2025 05:04:31 UTC
 <!--END_SECTION:waka-->
 ![Chart](https://wakatime.com/share/@Vault108/688d9b71-d249-4f4e-81ef-3dceb97e43a3.svg)
 
