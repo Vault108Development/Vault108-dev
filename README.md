@@ -1,7 +1,7 @@
 
 ![](https://hit.yhype.me/github/profile?user_id=44564111)
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-26%20hrs%203%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-25%20hrs%2048%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -10,6 +10,8 @@
 **🐱 My GitHub Data** 
 
 > 📦 115.4 kB Used in GitHub's Storage 
+ > 
+> 🏆 20 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -69,7 +71,7 @@ C++                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 30/06/2025 03:30:58 UTC
+ Last Updated on 30/06/2025 04:13:12 UTC
 <!--END_SECTION:waka-->
 ![Chart](https://wakatime.com/share/@Vault108/688d9b71-d249-4f4e-81ef-3dceb97e43a3.svg)
 
