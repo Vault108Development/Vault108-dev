@@ -1,7 +1,7 @@
 
 ![](https://hit.yhype.me/github/profile?user_id=44564111)
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-25%20hrs%2048%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-26%20hrs%2014%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -46,16 +46,18 @@ Sunday                   140 commits         ███░░░░░░░░�
 🕑︎ Time Zone: America/New_York
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+YAML                     22 mins             ██████████████████████░░░   87.87 % 
+CSS                      2 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.06 % 
+JSON                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.07 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  25 mins             █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+Unknown Project          25 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  25 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Python** 
@@ -71,7 +73,7 @@ C++                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 30/06/2025 04:13:12 UTC
+ Last Updated on 30/06/2025 05:05:59 UTC
 <!--END_SECTION:waka-->
 ![Chart](https://wakatime.com/share/@Vault108/688d9b71-d249-4f4e-81ef-3dceb97e43a3.svg)
 
