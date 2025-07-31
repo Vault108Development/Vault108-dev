@@ -1,8 +1,6 @@
 
 ![](https://hit.yhype.me/github/profile?user_id=44564111)
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-26%20hrs%2018%20mins-blue)
-
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-2-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-5.2%20million%20lines%20of%20code-blue)
@@ -71,7 +69,7 @@ C++                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 31/07/2025 03:33:35 UTC
+ Last Updated on 31/07/2025 04:19:27 UTC
 <!--END_SECTION:waka-->
 ![Chart](https://wakatime.com/share/@Vault108/688d9b71-d249-4f4e-81ef-3dceb97e43a3.svg)
 
