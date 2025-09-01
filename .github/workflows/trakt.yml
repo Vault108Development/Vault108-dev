@@ -1,0 +1,47 @@
+# This workflow runs the Python script on a schedule and updates the SVG file.
+
+name: Trakt.tv Stats Generator
+
+# Configure the workflow to run on a schedule (e.g., every day at 12:00 AM UTC)
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  # Allow manual triggering of the workflow from the Actions tab in GitHub
+  workflow_dispatch:
+
+jobs:
+  generate-stats-svg:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grant write permissions to the github-actions bot
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Step 3: Install Python dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      # Step 4: Run the Python script to generate the SVG
+      - name: Run Python script
+        run: python trakt_stats_generator.py
+        env:
+          TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
+
+      # Step 5: Configure git and commit the changes
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add trakt_stats.svg
+          git commit -m "chore: Update Trakt.tv stats SVG" || echo "No changes to commit."
+          git push
