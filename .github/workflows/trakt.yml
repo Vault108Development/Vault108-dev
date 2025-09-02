@@ -5,7 +5,7 @@ name: Trakt.tv Stats Generator
 # Configure the workflow to run on a schedule (e.g., every day at 12:00 AM UTC)
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */5 * * *'
   # Allow manual triggering of the workflow from the Actions tab in GitHub
   workflow_dispatch:
 
