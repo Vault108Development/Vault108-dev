@@ -18,6 +18,9 @@ jobs:
           SHOW_TIMEZONE: "True"
           SHOW_EDITORS: "True"
           SHOW_COMMIT: "True"
+          SHOW_TOTAL: "False"
+          BLOCKS: ->         
+          CODE_LANG: "ruby"
           SHOW_LANGUAGE: "True"
           SHOW_LINES_OF_CODE: "False" # optional, default is False
           SHOW_LANGUAGE_PER_REPO: "True"
