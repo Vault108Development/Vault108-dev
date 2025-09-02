@@ -5,7 +5,6 @@
 ![Movies Watched](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Vault108/Vault108/refs/heads/main/assets/trakt_stats.json&label=Movies%20Watched&query=$.movies.watched&style=for-the-badge) ![Days on Movies](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Vault108/Vault108/refs/heads/main/assets/trakt_stats.json&label=Days%20on%20Movies&query=$.movies.days&style=for-the-badge) 
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-26%20hrs%2018%20mins-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-5.3%20million%20lines%20of%20code-blue)
 
