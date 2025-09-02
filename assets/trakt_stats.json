@@ -6,8 +6,8 @@
         "collected": 0,
         "ratings": 1,
         "comments": 0,
-        "hours": 195.17,
-        "days": 8.13
+        "hours": 195,
+        "days": 8
     },
     "shows": {
         "watched": 182,
@@ -26,8 +26,8 @@
         "collected": 177,
         "ratings": 0,
         "comments": 0,
-        "hours": 7795.62,
-        "days": 324.82
+        "hours": 7796,
+        "days": 325
     },
     "network": {
         "friends": 0,
@@ -48,5 +48,6 @@
             "9": 0,
             "10": 1
         }
-    }
+    },
+    "last_updated": "2025-09-02T03:11:59.741135"
 }
