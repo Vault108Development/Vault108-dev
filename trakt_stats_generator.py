@@ -2,83 +2,10 @@ import json
 import requests
 import os
 
-def split_time_string(minutes):
+def generate_stats_json():
     """
-    Splits a time string into two parts for multi-line display in SVG,
-    showing total days and total hours without rounding.
-    """
-    total_days = minutes // 1440
-    
-    # Return days only
-    return f"{total_days:,} days"
-
-def generate_svg_content(movies_watched, shows_watched, episodes_watched, total_minutes, shows_minutes, movies_minutes):
-    """
-    Generates and saves the SVG image based on the provided statistics.
-    """
-    # Split the time strings for SVG display
-    total_time_line = split_time_string(total_minutes)
-    shows_time_line = split_time_string(shows_minutes)
-    movies_time_line = split_time_string(movies_minutes)
-    
-    # Define the SVG content as a string
-    svg_content = f"""
-    <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="#f9fafb" rx="15" ry="15"/>
-
-        <text x="30" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#1f2937">Trakt.tv Statistics</text>
-        
-
-        <g transform="translate(30, 150)">
-            <text y="0" font-family="sans-serif" font-size="20" fill="#374151">Shows Watched:</text>
-            <text y="0" x="250" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4b5563">{shows_watched}</text>
-        </g>
-        
-        <g transform="translate(30, 190)">
-            <text y="0" font-family="sans-serif" font-size="20" fill="#374151">Episodes Watched:</text>
-            <text y="0" x="250" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4b5563">{episodes_watched}</text>
-        </g>
-
-        <g transform="translate(30, 230)">
-            <text y="0" font-family="sans-serif" font-size="20" fill="#374151">Movies Watched:</text>
-            <text y="0" x="250" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4b5563">{movies_watched}</text>
-        </g>
-
-        <g transform="translate(30, 270)">
-            <text y="0" font-family="sans-serif" font-size="20" fill="#374151">Total Time Watched:</text>
-            <text x="250" y="0" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4b5563">
-                {total_time_line}
-            </text>
-        </g>
-
-        <g transform="translate(30, 310)">
-            <text y="0" font-family="sans-serif" font-size="20" fill="#374151">Time on Shows:</text>
-            <text x="250" y="0" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4b5563">
-                {shows_time_line}
-            </text>
-        </g>
-
-        <g transform="translate(30, 350)">
-            <text y="0" font-family="sans-serif" font-size="20" fill="#374151">Time on Movies:</text>
-            <text x="250" y="0" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4b5563">
-                {movies_time_line}
-            </text>
-        </g>
-    </svg>
-    """
-
-    # Define the output file name
-    output_file_name = "assets/trakt_stats.svg"
-    
-    # Save the SVG string to a file
-    with open(output_file_name, "w") as f:
-        f.write(svg_content)
-    
-    print(f"Successfully generated and saved the SVG to {output_file_name}")
-
-def generate_stats_svg():
-    """
-    Generates an SVG image of Trakt.tv user statistics by fetching data from the API.
+    Generates a JSON file of Trakt.tv user statistics by fetching data from the API,
+    adds new 'hours' and 'days' keys to the data, and saves the full response.
     """
     url = "https://api.trakt.tv/users/vault108/stats"
     trakt_api_key = os.environ.get('TRAKT_API_KEY')
@@ -99,16 +26,32 @@ def generate_stats_svg():
         response.raise_for_status()  # This will raise an exception for HTTP errors
         
         data = json.loads(response.text)
+        
+        # Calculate and add 'hours' and 'days' keys to the JSON data
+        if 'movies' in data and 'minutes' in data['movies']:
+            data['movies']['hours'] = round(data['movies']['minutes'] / 60, 2)
+            data['movies']['days'] = round(data['movies']['minutes'] / 1440, 2)
+        
+        if 'episodes' in data and 'minutes' in data['episodes']:
+            data['episodes']['hours'] = round(data['episodes']['minutes'] / 60, 2)
+            data['episodes']['days'] = round(data['episodes']['minutes'] / 1440, 2)
+            
+        if 'shows' in data and 'minutes' in data['shows']:
+            data['shows']['hours'] = round(data['shows']['minutes'] / 60, 2)
+            data['shows']['days'] = round(data['shows']['minutes'] / 1440, 2)
+        
+        # Log the full JSON data to the console
+        print("Generated JSON data:")
+        print(json.dumps(data, indent=4))
 
-        movies_watched = data["movies"]["watched"]
-        shows_watched = data["shows"]["watched"]
-        episodes_watched = data["episodes"]["watched"]
-        movies_minutes = data["movies"]["minutes"]
-        episodes_minutes = data["episodes"]["minutes"]
-        total_minutes = movies_minutes + episodes_minutes
-
-        # Call the new function to generate the SVG
-        generate_svg_content(movies_watched, shows_watched, episodes_watched, total_minutes, episodes_minutes, movies_minutes)
+        # Define the output file name
+        output_file_name = "assets/trakt_stats.json"
+        
+        # Save the full JSON response to a file
+        with open(output_file_name, "w") as f:
+            json.dump(data, f, indent=4)
+        
+        print(f"Successfully generated and saved the full JSON to {output_file_name}")
 
     except requests.exceptions.RequestException as e:
         print(f"An error occurred while making the API request: {e}")
@@ -119,6 +62,6 @@ def generate_stats_svg():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-# Run the function to generate the SVG
+# Run the function to generate the JSON
 if __name__ == "__main__":
-    generate_stats_svg()
+    generate_stats_json()
