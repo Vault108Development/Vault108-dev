@@ -26,3 +26,4 @@ jobs:
           SHOW_PROFILE_VIEWS: "False"
           SHOW_SHORT_INFO: "True"
           LOCALE: "en"
+          BADGE_STYLE: for-the-badge
