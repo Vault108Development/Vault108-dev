@@ -5,14 +5,13 @@
 ![Movies Watched](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Vault108/Vault108/refs/heads/main/assets/trakt_stats.json&label=Movies%20Watched&query=$.movies.watched&style=for-the-badge) ![Days on Movies](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/Vault108/Vault108/refs/heads/main/assets/trakt_stats.json&label=Days%20on%20Movies&query=$.movies.days&style=for-the-badge) 
 
 <!--START_SECTION:waka-->
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-5.3%20million%20lines%20of%20code-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-26%20hrs%2018%20mins-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 115.9 kB Used in GitHub's Storage 
  > 
-> 🏆 107 Contributions in the Year 2025
+> 🏆 109 Contributions in the Year 2025
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -23,21 +22,21 @@
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                416 commits         ███████░░░░░░░░░░░░░░░░░░   28.77 % 
-🌆 Daytime                340 commits         ██████░░░░░░░░░░░░░░░░░░░   23.51 % 
-🌃 Evening                430 commits         ███████░░░░░░░░░░░░░░░░░░   29.74 % 
-🌙 Night                  260 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.98 % 
+🌞 Morning                416 commits         ███████░░░░░░░░░░░░░░░░░░   28.71 % 
+🌆 Daytime                340 commits         ██████░░░░░░░░░░░░░░░░░░░   23.46 % 
+🌃 Evening                430 commits         ███████░░░░░░░░░░░░░░░░░░   29.68 % 
+🌙 Night                  263 commits         █████░░░░░░░░░░░░░░░░░░░░   18.15 % 
 ```
 📅 **I'm Most Productive on Tuesday** 
 
 ```text
-Monday                   229 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.84 % 
-Tuesday                  308 commits         █████░░░░░░░░░░░░░░░░░░░░   21.30 % 
-Wednesday                259 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.91 % 
-Thursday                 133 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.20 % 
-Friday                   132 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.13 % 
-Saturday                 227 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.70 % 
-Sunday                   158 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.93 % 
+Monday                   229 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.80 % 
+Tuesday                  311 commits         █████░░░░░░░░░░░░░░░░░░░░   21.46 % 
+Wednesday                259 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.87 % 
+Thursday                 133 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.18 % 
+Friday                   132 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.11 % 
+Saturday                 227 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.67 % 
+Sunday                   158 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.90 % 
 ```
 
 
@@ -72,6 +71,6 @@ JavaScript               1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 02/09/2025 06:18:25 UTC
+ Last Updated on 02/09/2025 06:23:54 UTC
 <!--END_SECTION:waka-->
 ![Chart](https://wakatime.com/share/@Vault108/688d9b71-d249-4f4e-81ef-3dceb97e43a3.svg)
