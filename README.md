@@ -7,7 +7,14 @@
 <!--START_SECTION:waka-->
 
 ```ruby
-No activity tracked
+From: 04 October 2021 - To: 02 September 2025
+
+Total Time: 24 hrs 56 mins
+
+Python        14 hrs 3 mins   >>>>>>>>>>>>>------------   53.44 %
+Markdown      5 hrs 4 mins    >>>>>--------------------   19.28 %
+JSON          1 hr 54 mins    >>-----------------------   07.28 %
+Other         1 hr 21 mins    >------------------------   05.18 %
 ```
 
 <!--END_SECTION:waka-->
