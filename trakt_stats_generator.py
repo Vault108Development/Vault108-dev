@@ -12,22 +12,22 @@ def generate_stats_json():
     trakt_api_key = os.environ.get('TRAKT_API_KEY')
 
     if not trakt_api_key:
-        print("Error: The TRAKT_API_KEY environment variable is not set.")
+        print("Error: The TRAKT_API_KEY environment variable is not set. Please set it before running the script.")
         return
 
     payload = {}
     headers = {
-      'Content-Type': 'application/json',
-      'trakt-api-version': '2',
-      'trakt-api-key': trakt_api_key
+        'Content-Type': 'application/json',
+        'trakt-api-version': '2',
+        'trakt-api-key': trakt_api_key
     }
 
     try:
         print("Attempting to fetch data from Trakt.tv API...")
-        response = requests.request("GET", url, headers=headers, data=payload)
+        response = requests.get(url, headers=headers)
         response.raise_for_status()  # This will raise an exception for HTTP errors
         
-        data = json.loads(response.text)
+        data = response.json()
         
         # Calculate and add 'hours' and 'days' keys to the JSON data, rounding to the nearest whole number
         if 'movies' in data and 'minutes' in data['movies']:
@@ -49,14 +49,20 @@ def generate_stats_json():
         print("Generated JSON data:")
         print(json.dumps(data, indent=4))
 
-        # Define the output file name
-        output_file_name = "assets/trakt_stats.json"
+        # --- FIX: Use a robust, absolute path for the output file ---
+        # Get the directory where the script is located
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        # Construct the full path to the output file using os.path.join for cross-platform compatibility
+        output_dir = os.path.join(script_dir, "assets")
+        output_file_name = os.path.join(output_dir, "trakt_stats.json")
         
         # Ensure the assets directory exists
-        os.makedirs(os.path.dirname(output_file_name), exist_ok=True)
-        print(f"Directory 'assets' confirmed to exist or was created.")
+        os.makedirs(output_dir, exist_ok=True)
+        print(f"Directory '{output_dir}' confirmed to exist or was created.")
         
         print(f"Attempting to save JSON to file: {output_file_name}")
+        
         # Save the full JSON response to a file
         with open(output_file_name, "w") as f:
             json.dump(data, f, indent=4)
