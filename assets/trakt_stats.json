@@ -1,13 +1,13 @@
 {
     "movies": {
-        "plays": 113,
-        "watched": 111,
-        "minutes": 12457,
+        "plays": 141,
+        "watched": 139,
+        "minutes": 15361,
         "collected": 0,
         "ratings": 1,
         "comments": 0,
-        "hours": 208,
-        "days": 9
+        "hours": 256,
+        "days": 11
     },
     "shows": {
         "watched": 183,
@@ -20,13 +20,13 @@
         "comments": 0
     },
     "episodes": {
-        "plays": 14254,
-        "watched": 13524,
-        "minutes": 467567,
+        "plays": 14256,
+        "watched": 13526,
+        "minutes": 467653,
         "collected": 177,
         "ratings": 0,
         "comments": 0,
-        "hours": 7793,
+        "hours": 7794,
         "days": 325
     },
     "network": {
@@ -49,5 +49,5 @@
             "10": 1
         }
     },
-    "last_updated": "2025-09-05T05:06:50.482109"
+    "last_updated": "2025-09-05T10:06:39.238927"
 }
