@@ -1,12 +1,12 @@
 {
     "movies": {
-        "plays": 141,
+        "plays": 142,
         "watched": 139,
-        "minutes": 15361,
+        "minutes": 15449,
         "collected": 0,
         "ratings": 1,
         "comments": 0,
-        "hours": 256,
+        "hours": 257,
         "days": 11
     },
     "shows": {
@@ -49,5 +49,5 @@
             "10": 1
         }
     },
-    "last_updated": "2025-09-07T05:05:58.199120"
+    "last_updated": "2025-09-07T10:05:40.941731"
 }
