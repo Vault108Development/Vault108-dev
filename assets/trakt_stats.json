@@ -10,7 +10,7 @@
         "days": 11
     },
     "shows": {
-        "watched": 185,
+        "watched": 184,
         "collected": 1,
         "ratings": 5,
         "comments": 0
@@ -20,9 +20,9 @@
         "comments": 0
     },
     "episodes": {
-        "plays": 14288,
-        "watched": 13553,
-        "minutes": 469280,
+        "plays": 14293,
+        "watched": 13558,
+        "minutes": 469236,
         "collected": 177,
         "ratings": 0,
         "comments": 0,
@@ -49,5 +49,5 @@
             "10": 1
         }
     },
-    "last_updated": "2025-09-16T00:25:26.934516"
+    "last_updated": "2025-09-16T05:06:41.716894"
 }
