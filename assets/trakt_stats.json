@@ -22,11 +22,11 @@
     "episodes": {
         "plays": 14303,
         "watched": 13568,
-        "minutes": 469672,
+        "minutes": 469877,
         "collected": 177,
         "ratings": 0,
         "comments": 0,
-        "hours": 7828,
+        "hours": 7831,
         "days": 326
     },
     "network": {
@@ -49,5 +49,5 @@
             "10": 1
         }
     },
-    "last_updated": "2025-09-19T20:07:06.834692"
+    "last_updated": "2025-09-20T00:24:39.073027"
 }
