@@ -30,10 +30,13 @@ jobs:
           pip install requests
 
       - name: Run Python script
-        run: python trakt_stats_generator.py
+        run: python stats_generator.py
         env:
           TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
-
+          TRAKT_USERNAME: ${{ secrets.TRAKT_USERNAME }}
+          username: ${{ secrets.LASTFM_USERNAME }}
+          apikey: ${{ secrets.LASTFM_APIKEY }}
+          limit: ${{ secrets.LASTFM_LIMIT }}
       # Step 5: Configure git and commit the changes
       - name: Commit and push changes
         run: |
