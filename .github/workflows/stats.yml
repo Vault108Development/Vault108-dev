@@ -34,9 +34,9 @@ jobs:
         env:
           TRAKT_API_KEY: ${{ secrets.TRAKT_API_KEY }}
           TRAKT_USERNAME: ${{ secrets.TRAKT_USERNAME }}
-          username: ${{ secrets.LASTFM_USERNAME }}
-          apikey: ${{ secrets.LASTFM_APIKEY }}
-          limit: ${{ secrets.LASTFM_LIMIT }}
+          LASTFM_USERNAME: ${{ secrets.LASTFM_USERNAME }}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_APIKEY }}
+          LASTFM_LIMIT: ${{ secrets.LASTFM_LIMIT }}
       # Step 5: Configure git and commit the changes
       - name: Commit and push changes
         run: |
