@@ -18,8 +18,7 @@ def lastfm_stats():
     username = os.getenv("LASTFM_USERNAME")
     api_key = os.getenv("LASTFM_API_KEY")
     limit = os.getenv("LASTFM_LIMIT")
-    scrobbler_url = f"http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user={username}\
-    &api_key={api_key}&limit={str(limit)}&format=json"
+    scrobbler_url = f"http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user={username}\&api_key={api_key}&limit={str(limit)}&format=json"
     response = requests.get(scrobbler_url, timeout=10)
     if response.status_code != 200:
         print("Error: Unable to fetch data from Last.fm API")
